@@ -31,13 +31,24 @@
                         <h5 class="text-secondary text-center small">officielle du festival BID.</h5>
                         <div class="container">
                             <blockquote>
-                                <p class="h2 text-center">Les incontournables de votre boutique Festival</p><br>
-                                <p class="h2 text-info text-center">Réservez vos billets dès maintenant ! </p>
+                                <p class="h2 text-center ">Les incontournables de votre boutique Festival</p><br>
+                                <p class="text-center">
+                                    <a class="btn btn-success font-weight-bold" href="#" data-toggle="modal" data-target="#myMod">
+                                        Livraison à domicile <span class="badge badge-light">
+                                            <i class="fas fa-truck"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <p class="text-center">
+                                    <a class="btn btn-success font-weight-bold" href="#" data-toggle="modal" data-target="#myMod">
+                                        Retrait sur place <span class="badge badge-light">
+                                            <i class="fas fa-box"></i>
+                                        </span>
+                                    </a>
+                                </p>
                             </blockquote>
                         </div>
                     </div>
-
-
 
                     <!-- Le carousel -->
 
@@ -47,7 +58,7 @@
                         <div id="demo" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="imagesBootstrap/i3.avif" alt="3" class="d-block w-100" style="width:100%; height: 400px; object-fit: cover;">
+                                    <img src="imagesBootstrap/i3.png" alt="3" class="d-block w-100" style="width:100%; height: 400px; object-fit: cover;">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="imagesBootstrap/2.jpg" alt="2" class="d-block w-100" style="width:100%; height: 400px; object-fit: cover;">
@@ -71,17 +82,23 @@
                 </div>
             </div>
 
+
             <nav class="navbar navbar-expand-lg navbar-dark bg-black my-4 mx-2">
                 <div class="container">
                     <div class="dropdown">
-                        <input id="searchInput" type="text" class="form-control mr-auto w-50" placeholder="Rechercher">
-                        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
-                        <!-- <a class="dropdown-item" href="#">Article 1</a> -->
-                        <!-- <a class="dropdown-item" href="#">Article 2</a> -->
-                        <!-- <a class="dropdown-item" href="#">Article 3</a> -->
-                        <!-- <a class="dropdown-item" href="#">Article 4</a> -->
-                        <!-- </div> -->
+                        <input id="searchInput" type="text" class="form-control mr-auto w-50 dropdown-toggle" data-toggle="dropdown" placeholder="Rechercher">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod1">One Adult</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod2">Graos Party 20</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod3">Let's Rock</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod4">Drumsland</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod5">Simplicity Art Poster</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod6">Ciné Affiche</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod7">Lunettes</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myMod8">Tee-Shirt</a>
+                        </div>
                     </div>
+
 
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -99,6 +116,7 @@
                     </ul>
                 </div>
             </nav>
+
 
 
             <!--Ajout des cards !!!-->
@@ -563,32 +581,211 @@
                 </div>
             </div>
 
+
             <div class="modal fade" id="myMod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content ">
-                        <div class="modal-header bg-success">
-                            <h2 class="modal-title text-center text-white" id="myModalLabel">INFORMATIONS DE LIVRAISON</h2>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-success">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center text-white" id="myModalLabel">Informations de Livraison</h2>
                         </div>
-                    </div>
-                    <div class="modal-body bg-white">
-                        <h4>Mode de Livraison</h4>
-                        <p>Votre commande peut vous parvenir :</p>
-                        <p>A votre domicile, sans signature ;</p>
-                        <p>Dans le Point Relais que vous aurez choisi ;</p>
-                        <h4>Délais</h4>
-                        <p>Les délais indiqués le sont à titre indicatif et peuvent varier en fonction de la période de l’année et du contexte</p>
-                        <p>Délais indicatifs, à compter de l’expédition et selon le mode de livraison</p>
-                        <p>Vous avez la possibilité de choisir une adresse de livraison différente de l’adresse de facturation. En cas d’absence, votre commande est mise en instance dans votre bureau de poste habituel</p>
-                    </div>
-                    <div class="modal-footer bg-white">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <div class="modal-body bg-white">
+                            <h4 class="text-center">Mode de Livraison</h4>
+                            <ul>
+                                <li>Votre commande peut vous parvenir à votre domicile, sans signature.</li>
+                                <li>Dans le Point Relais que vous aurez choisi.</li>
+                            </ul>
+                            <h4 class="text-center">Délais</h4>
+                            <p class="text-center">Les délais indiqués le sont à titre indicatif et peuvent varier en fonction de la période de l’année et du contexte.</p>
+                            <p class="text-center">Délais indicatifs, à compter de l’expédition et selon le mode de livraison.</p>
+                            <p class="text-center">Vous avez la possibilité de choisir une adresse de livraison différente de l’adresse de facturation. En cas d’absence, votre commande est mise en instance dans votre bureau de poste habituel.</p>
+                        </div>
+                        <div class="modal-footer bg-white">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        
-        
-        
-        
+
+            <div class="modal fade" id="myMod7">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Lunettes</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="imagesBootstrap/y1.jpg" alt="Article" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <img src="imagesBootstrap/y2.jpg" alt="Article" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#cardA1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myMod1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">One Adult</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/x1.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Graos Party 20</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/x2.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Let's Rock</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/x3.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod4">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Drumsland</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/t3.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod5">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Simplicity art Poster</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/i1.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card5" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod6">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Ciné Affiche</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <img src="imagesBootstrap/i2.jpg" alt="Article" class="img-fluid">
+
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#card5" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myMod8">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Tee-Shirt</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="imagesBootstrap/2.jpg" alt="Article" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <img src="imagesBootstrap/3.jpg" alt="Article" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#cardA1" class="btn btn-dark" data-dismiss="modal">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
         </div>
 
     </div>
