@@ -9,14 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
     <title>Document</title>
 </head>
-<body style="    background: url('https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
+<body>
     <div class="container-fluid">
         <!-- Integration du header -->
         <iframe src="Header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
         <div class="row m-1">
-            <div class="col-sm-6 col-12">
+            <div class=" offset-sm-1 col-sm-4 col-12">
                 <div class="row m-1">
-                    <div class="col-sm-12 col-6 bg-success">
+                    <div class=" col-sm-12 col-6 d-flex align-items-center">
                         <!--Caroussel Artiste-->
                         <div id="myArtisteCarousel" class="carousel slide carousel-fade m-3" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -38,21 +38,25 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                        </div><p class="text-center">Carousel Artiste</p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-6 bg-dark">
+                    <div class="col-sm-12 col-6">
+                        <p class="text-center fw-bold fst-italic">Son dernier album</p>
                         <img src="https://images.unsplash.com/photo-1549150712-1d243024db80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" class="img-thumbnail img-fluid" alt="Error">
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-12 bg-danger align-self-center p-6">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, felis a pharetra viverra, ante nisl facilisis augue, non laoreet enim magna vitae nibh. Nam ut mollis nibh. Phasellus vitae diam semper, ultrices eros eu, sagittis enim. Nunc orci nibh, ullamcorper ac malesuada id, iaculis quis dolor. Vestibulum commodo dignissim tellus id porta. Curabitur sagittis, est nec sodales varius, mi libero tristique orci, et suscipit dui dui quis mi. Nullam vitae massa at sem volutpat sagittis vel quis lacus. Aenean rhoncus neque dui, quis condimentum dolor fermentum sit amet. Sed at rhoncus libero. Duis at vehicula quam, ac hendrerit nunc. Praesent tristique risus tincidunt posuere malesuada. Nulla facilisi. Suspendisse tincidunt congue ornare. Cras eleifend urna vitae tristique blandit. Aliquam erat volutpat. Nulla gravida est vel eros faucibus suscipit. Duis consequat ligula eu eros consectetur, vitae iaculis ligula porttitor. Donec vehicula ac nibh vel pulvinar. Aenean mollis risus vel gravida condimentum.
+            <div class="offset-sm-1 col-sm-5 col-12 align-items-center p-6">
+                <br>
+                <h1 class="display-4 text-center">Nom Artiste</h1>
+                <br>
+                <p class="text-center p-3 border" style="background-color: #F0F0F0;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores pariatur, debitis animi odio repellendus sed quam dignissimos iste nobis voluptatem nostrum praesentium dolorum magnam tempora veniam quibusdam quo hic ipsam illum quia quidem. Cum laudantium asperiores officia sed fugit voluptates et tempora amet alias fugiat rem aliquid, voluptatum recusandae. Ab cumque expedita quo nesciunt autem illum qui mollitia inventore. Ut ipsam expedita optio ullam molestias molestiae maiores odit sed aspernatur sunt nemo atque dolorum, perspiciatis eveniet! Asperiores voluptas dolore aliquam ut tempora excepturi, at odit aspernatur vel ipsum perferendis minima qui repellat. Eveniet pariatur dolorum totam mollitia ea itaque maxime beatae dolor quos minima corporis accusamus nesciunt, reprehenderit veritatis inventore quibusdam. Molestias doloribus asperiores, sint sequi voluptate vel velit modi nostrum placeat expedita illo assumenda alias autem nihil sit doloremque impedit aliquid iusto odio adipisci quos aut accusantium. Omnis ducimus, eius ipsa aut laborum vitae magni sint dolor laudantium quis.
                 </p>
             </div>
         </div>
         <br>
-        <div class="row bg-info">
+        <div class="row">
             <div class="col-8 offset-2">
                 <div class="ratio ratio-4x3">
                     <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
